@@ -32,7 +32,7 @@ export default function ReviewForm() {
       ]
     );
     //Refreshing the data on the reviews page
-    revalidatePath("/readreviews");
+    // revalidatePath("/readreviews");
   }
   return (
     <div id="form-container">

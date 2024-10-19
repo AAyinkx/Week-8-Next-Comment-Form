@@ -3,7 +3,7 @@ import { dateISOtoLocal } from "@/Utils/dateFormat";
 import Image from "next/image";
 import defaultImage from "@/../public/image-not-available.png";
 import "../ReadReviews.module.css";
-export default async function AddReviews() {
+export default async function ReadReviews() {
   const reviews = await db.query(`SELECT * FROM book_reviews`);
   console.log(reviews);
   const wrangledReviews = reviews.rows;
