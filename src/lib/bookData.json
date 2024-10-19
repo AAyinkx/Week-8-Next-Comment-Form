@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "username": "bookworm23",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "rating": 5,
+    "review": "A timeless classic with beautiful prose and complex characters.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9781/8532/9781853260414.jpg",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "username": "novelnerd88",
+    "title": "1984",
+    "author": "George Orwell",
+    "rating": 5,
+    "review": "Chillingly relevant and a must-read for everyone who cares about freedom.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/1410/9780141036144.jpg",
+    "date": "2024-02-05"
+  },
+  {
+    "id": 3,
+    "username": "literaturelover",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "rating": 4,
+    "review": "A brilliant social critique wrapped in a charming romantic plot.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/1414/9780141439518.jpg",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 4,
+    "username": "avidreader01",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "rating": 5,
+    "review": "An unforgettable story with deep moral lessons about justice and empathy.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/0995/9780099549482.jpg",
+    "date": "2024-03-01"
+  },
+  {
+    "id": 5,
+    "username": "fictionfanatic",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "rating": 3,
+    "review": "An interesting take on teenage angst, though not for everyone.",
+    "src": "https://cdn.waterstones.com/override/v1/large/9780/2419/9780241950432.jpg",
+    "date": "2024-03-10"
+  },
+  {
+    "id": 6,
+    "username": "classicliterati",
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "rating": 4,
+    "review": "A lengthy but rewarding read, filled with symbolism and philosophical depth.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/1424/9780142437247.jpg",
+    "date": "2024-03-25"
+  },
+  {
+    "id": 7,
+    "username": "readsalot92",
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "rating": 5,
+    "review": "A fascinating and unsettling vision of the future, brilliantly written.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/0995/9780099518471.jpg",
+    "date": "2024-04-02"
+  },
+  {
+    "id": 8,
+    "username": "storyteller56",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "rating": 5,
+    "review": "A profound exploration of morality, guilt, and redemption.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/1404/9780140449136.jpg",
+    "date": "2024-04-20"
+  },
+  {
+    "id": 9,
+    "username": "bookjunkie",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "rating": 5,
+    "review": "An enchanting adventure that sets the stage for the world of Middle-earth.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/2611/9780261103344.jpg",
+    "date": "2024-05-01"
+  },
+  {
+    "id": 10,
+    "username": "historicalbuff",
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "rating": 5,
+    "review": "A monumental work of fiction that explores the human condition and history.",
+    "src": "https://cdn.waterstones.com/bookjackets/large/9780/1404/9780140447934.jpg",
+    "date": "2024-05-15"
+  },
+  {
+    "id": 11,
+    "username": "chaptermaster",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "rating": 5,
+    "review": "A deeply emotional novel that explores love, family, and societal pressures.",
+    "src": "https://m.media-amazon.com/images/I/91ZDiPX-MpL.jpg",
+    "date": "2024-06-01"
+  },
+  {
+    "id": 12,
+    "username": "bookaddict99",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "rating": 4,
+    "review": "A powerful story about creation, responsibility, and the human condition.",
+    "src": "https://m.media-amazon.com/images/I/91uhcOqDI-L.jpg",
+    "date": "2024-06-10"
+  },
+  {
+    "id": 13,
+    "username": "librarian85",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "rating": 5,
+    "review": "A thrilling and epic tale of adventure and perseverance.",
+    "src": "https://m.media-amazon.com/images/I/91bh70RvohL.jpg",
+    "date": "2024-06-20"
+  },
+  {
+    "id": 14,
+    "username": "classiclover22",
+    "title": "The Iliad",
+    "author": "Homer",
+    "rating": 5,
+    "review": "A masterful epic full of tragedy, heroism, and human struggles.",
+    "src": "https://m.media-amazon.com/images/I/81fxAvbBzYL.jpg",
+    "date": "2024-07-01"
+  },
+  {
+    "id": 15,
+    "username": "wordnerd90",
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "rating": 5,
+    "review": "A philosophical masterpiece exploring faith, morality, and free will.",
+    "src": "https://m.media-amazon.com/images/I/81jeJOt2tVL.jpg",
+    "date": "2024-07-15"
+  },
+  {
+    "id": 16,
+    "username": "historybuff01",
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "rating": 5,
+    "review": "An expansive tale of injustice, redemption, and love.",
+    "src": "https://m.media-amazon.com/images/I/91sFokjleML.jpg",
+    "date": "2024-07-30"
+  },
+  {
+    "id": 17,
+    "username": "fictionlover12",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "rating": 4,
+    "review": "A powerful and emotional story of love and independence.",
+    "src": "https://m.media-amazon.com/images/I/91uhBGxG2-L.jpg",
+    "date": "2024-08-05"
+  },
+  {
+    "id": 18,
+    "username": "epicreader24",
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "rating": 5,
+    "review": "A mesmerizing journey through the realms of the afterlife.",
+    "src": "https://m.media-amazon.com/images/I/81UCa+42YJL.jpg",
+    "date": "2024-08-15"
+  },
+  {
+    "id": 19,
+    "username": "bookishbabe",
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "rating": 4,
+    "review": "A haunting tale of passion, revenge, and tragic love.",
+    "src": "https://m.media-amazon.com/images/I/81GgA+Rkd+L.jpg",
+    "date": "2024-08-25"
+  },
+  {
+    "id": 20,
+    "username": "litbuff02",
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "rating": 5,
+    "review": "A brilliant and heartwarming story of personal growth and love.",
+    "src": "https://m.media-amazon.com/images/I/91AgFzVQ+ZL.jpg",
+    "date": "2024-09-01"
+  }
+]
