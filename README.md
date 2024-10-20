@@ -4,8 +4,8 @@
 
 ## WireFrames
 
-![alt text](<client/public/Week 7 Book Nook Full Stack WireFrame.png>)
-![alt text](<client/public/Week 7 Book Nook Full Stack WireFrame (Stretch Goals).png>)
+![alt text](<public/Week 7 Book Nook Full Stack WireFrame.png>)
+![alt text](<public/Week 7 Book Nook Full Stack WireFrame (Stretch Goals).png>)
 
 - I actually managed to complete these goals that we stretch goals last week 🥳
 
