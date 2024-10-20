@@ -10,7 +10,7 @@
   height: 45vh;
   margin-top: 20px;
   margin-bottom: 10px;
-  overflow: scroll;
+
   overflow-x: hidden;
   left: 50%;
   transform: translateX(-50%);

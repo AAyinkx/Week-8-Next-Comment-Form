@@ -1,4 +1,8 @@
 import ReviewForm from "@/Components/ReviewForm";
+export const metadata = {
+  title: "Add Reviews",
+  description: "Add a book review and contribut to my library",
+};
 export default function AddReviews() {
   return (
     <>

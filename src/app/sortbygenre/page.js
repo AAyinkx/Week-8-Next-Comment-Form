@@ -4,6 +4,10 @@ import Image from "next/image";
 import defaultImage from "@/../public/image-not-available.png";
 import styles from "../SortByGenre.module.css";
 import { StarNumber } from "@/Utils/starCount";
+export const metadata = {
+  title: "Sort by Genre",
+  description: "Find your perfect book by genre 🔍🔮",
+};
 
 export default async function ReadReviews() {
   const genres = await db.query(`SELECT * FROM genres_of_books`);

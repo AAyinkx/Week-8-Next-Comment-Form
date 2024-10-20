@@ -5,6 +5,11 @@ import defaultImage from "@/../public/image-not-available.png";
 import styles from "../../ReadReview.module.css";
 import { StarNumber } from "@/Utils/starCount";
 import Empty from "@/Components/Empty";
+export const metadata = {
+  title: `Genre Exploration 🌍`,
+  description: `Explore the different genres`,
+};
+
 export default async function GenreID({ params }) {
   const genre = await db.query(
     `SELECT id, genre_name FROM genres_of_books WHERE id=${params.genreid}`

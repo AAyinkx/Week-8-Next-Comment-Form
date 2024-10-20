@@ -8,3 +8,9 @@
   align-items: center;
   padding-top: 20px;
 }
+.links {
+  color: #6d071a;
+}
+.links:hover {
+  color: navy;
+}

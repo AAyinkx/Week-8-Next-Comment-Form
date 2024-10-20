@@ -28,12 +28,12 @@
   scale: 1;
 }
 @media ((width<=580px)) {
-  #thumb-button {
+  .thumButton {
     font-size: 20px;
   }
 }
 @media ((width<=450px)) {
-  #thumb-button {
+  .thumButton {
     font-size: 15px;
   }
 }

@@ -12,9 +12,11 @@ export default async function CommentForm(props) {
     "use server";
 
     const formData = {
-      username: formValues.get("username"),
-      comment: formValues.get("comment"),
+      username: "",
+      comment: "",
     };
+    formData.username = formValues.get("username");
+    formData.comment = formValues.get("comment");
     console.log(formData);
     await db.query(
       `INSERT INTO comments (username, comment)

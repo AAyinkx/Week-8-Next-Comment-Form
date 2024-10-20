@@ -13,7 +13,6 @@ export default function ThumbButton({ id, initial, handleClicks }) {
           onClick={() => {
             handleClicks();
             setLikes(1);
-            redirect(`/readreviews/${id}`);
           }}
         >
           <i

@@ -1,6 +1,10 @@
 import bookData from "@/lib/bookData.json";
 import Link from "next/link";
 import styles from "../MoreBooks.module.css";
+export const metadata = {
+  title: "More Books",
+  description: "Browse some books, sort them as you wish! 🪄",
+};
 export default function MoreBooks({ searchParams }) {
   if (searchParams.sort === "asc-title") {
     bookData.sort((a, b) => a.title.localeCompare(b.title));

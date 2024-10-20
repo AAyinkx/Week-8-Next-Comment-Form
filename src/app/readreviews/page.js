@@ -8,20 +8,15 @@ import ThumbButton from "@/Components/ThumbButton";
 import { revalidatePath } from "next/cache";
 //make sure redirect is from next/navigation
 import { redirect } from "next/navigation";
+export const metadata = {
+  title: "Read Reviews",
+  description: "Read Reviews Posted by other people",
+};
 export default async function ReadReviews({ params }) {
   const reviews = await db.query(`SELECT * FROM book_reviews;`);
 
   console.log(reviews);
   const wrangledReviews = reviews.rows;
-
-  async function handleClicks2(id) {
-    "use server";
-    await db.query(
-      `UPDATE book_reviews SET likes = likes + 1 WHERE id = ${id};`
-    );
-    revalidatePath(`/readreviews`);
-    redirect(`/readreviews`);
-  }
 
   return (
     <>
