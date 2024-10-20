@@ -1,21 +1,19 @@
 import { db } from "@/Utils/dbConnection";
-import { dateISOtoLocal } from "@/Utils/dateFormat";
 import Image from "next/image";
-import defaultImage from "@/../public/image-not-available.png";
-import styles from "../ReadReview.module.css";
+import styles from "../../IndividualReview.module.css";
+import defaultImage from "@/../../public/image-not-available.png";
+import { dateISOtoLocal } from "@/Utils/dateFormat";
 import { StarNumber } from "@/Utils/starCount";
-export default async function ReadReviews() {
-  const reviews = await db.query(`SELECT * FROM book_reviews`);
-  console.log(reviews);
-  const wrangledReviews = reviews.rows;
-
+export default async function IndividualReview({ params }) {
+  const review = await db.query(
+    `SELECT * FROM book_reviews WHERE id=${params.id}`
+  );
+  const wrangledReview = review.rows;
+  console.log("This is the data " + wrangledReview[0].title);
   return (
     <>
-      <h1 className={styles.readReviewsTitle}>
-        <i className="fa-solid fa-book-bookmark"></i> Reviews
-      </h1>
       <div className={styles.reviewContainer}>
-        {wrangledReviews.reverse().map((review) => (
+        {wrangledReview.reverse().map((review) => (
           <div key={review.id} className={styles.review}>
             <div className={styles.bookCover}>
               <Image
@@ -24,9 +22,6 @@ export default async function ReadReviews() {
                 width={200}
                 height={350}
               />
-              <a href={`/readreviews/${review.id}`}>
-                Read more about {review.title}
-              </a>
             </div>
             <div className={styles.mainReview}>
               <div className={styles.date}>
@@ -45,6 +40,11 @@ export default async function ReadReviews() {
           </div>
         ))}
       </div>
+
+      <br />
+      <a className={styles.link} href={`/readreviews`}>
+        Return to main reviews
+      </a>
     </>
   );
 }

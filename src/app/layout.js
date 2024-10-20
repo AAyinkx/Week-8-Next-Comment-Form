@@ -3,7 +3,7 @@ import { Ribeye_Marrow, Sue_Ellen_Francisco } from "next/font/google";
 import Script from "next/script";
 import Navbar from "@/Components/Navbar";
 import Header from "@/Components/Header";
-import background from "/public/Background.jpg";
+
 const ribeye_marrow = Ribeye_Marrow({
   weight: "400",
   style: "normal",
@@ -11,7 +11,7 @@ const ribeye_marrow = Ribeye_Marrow({
 });
 export const sue_ellen = Sue_Ellen_Francisco({
   weight: "400",
-  size: "20px",
+  size: "25px",
   subsets: ["latin"],
 });
 export const metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
           crossorigin="anonymous"
         ></Script>
         <Navbar />
-        <Header header={ribeye_marrow.className} />
+        <Header styles={`text-6xl ${ribeye_marrow.className}`} />
         {children}
       </body>
     </html>

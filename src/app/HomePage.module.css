@@ -1,0 +1,20 @@
+.introText {
+  font-size: 25px;
+  line-height: 105%;
+  color: black;
+}
+.mainBookshelf {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+.mainTextContainer {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  width: 80vw;
+}
+.homeTitle {
+  font-size: 40px;
+  color: #6d071a;
+}

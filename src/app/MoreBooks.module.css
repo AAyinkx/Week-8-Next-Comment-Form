@@ -1,0 +1,19 @@
+.moreBooksTitle {
+  font-size: 40px;
+  color: #6d071a;
+}
+.sortTags {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.sortTags:hover {
+  color: black;
+}
+.sort {
+  color: #1f3a5f;
+  font-size: 28px;
+}

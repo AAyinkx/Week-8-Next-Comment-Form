@@ -7,7 +7,7 @@
   border-radius: 10px;
   background-color: #24613b;
   width: 800px;
-  height: 65vh;
+  height: 75vh;
   margin-bottom: 20px;
   overflow: scroll;
   overflow-x: hidden;
@@ -43,14 +43,15 @@
 input[type="text"],
 input[type="number"],
 input[type="date"],
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 8px;
   font-size: 18px;
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 input[type="text"]::placeholder,
 input[type="number"]::placeholder,
@@ -62,6 +63,7 @@ textarea ::placeholder {
 #submit-button:hover {
   background-color: #d5b48b;
 }
+
 @media ((width<=825px)) {
   #the-form {
     width: 600px;

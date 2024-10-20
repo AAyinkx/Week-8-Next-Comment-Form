@@ -1,13 +1,14 @@
 import Image from "next/image";
 import bookshelf2 from "@/../public/bookshelf2.png";
+import styles from "./HomePage.module.css";
 export default function HomePage() {
   return (
-    <>
-      <h1 id="home-title">
+    <div className={styles.page}>
+      <h1 className={styles.homeTitle}>
         <i className="fa-solid fa-house"></i> Home
       </h1>
-      <div id="intro-text">
-        <h2>
+      <div className={styles.mainTextContainer}>
+        <h2 className={styles.introText}>
           Think about that book sitting on your shelf. It&apos;s more than just
           a collection of words waiting for you—inside those pages, an entire
           world is waiting to be discovered. A world where the characters
@@ -22,12 +23,12 @@ export default function HomePage() {
       </div>
 
       <Image
-        id="main-bookshelf"
+        className={styles.mainBookshelf}
         src={bookshelf2}
         alt="Bookshelf filled with books and other nick nacks"
         width={300}
         height={300}
       ></Image>
-    </>
+    </div>
   );
 }

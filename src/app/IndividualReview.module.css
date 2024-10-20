@@ -1,0 +1,100 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+.reviewContainer {
+  background-color: white;
+  width: 50vw;
+  left: 50vw;
+  transform: translateX(50%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+.readReviewsTitle {
+  font-size: 40px;
+  color: #6d071a;
+}
+.review {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+  z-index: 0;
+}
+.username {
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+}
+.date {
+  font-size: 20px;
+  color: grey;
+}
+.titleAuthor {
+  font-size: 25px;
+  color: black;
+}
+.ratingStars {
+  color: #efbf04;
+}
+.bookReview {
+  font-size: 30px;
+}
+.bookCover {
+  position: relative;
+  left: 0px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.mainReview {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  font-size: 25px;
+  background-color: #6d071a;
+  color: white;
+  padding: 0px 20px;
+  border-radius: 15px;
+}
+.link:hover {
+  color: #6d071a;
+  background-color: white;
+
+  padding: 0px 20px;
+
+  border-radius: 15px;
+}
+@media ((width<=925px)) {
+  #review-container {
+    width: 700px;
+  }
+}
+
+@media ((width<=750px)) {
+  #review-container {
+    width: 550px;
+  }
+  .bookReview {
+    font-size: 23px;
+  }
+}
+@media ((width<=580px)) {
+  .reviewContainer {
+    width: 400px;
+  }
+  .bookReview {
+    font-size: 20px;
+  }
+}
+@media ((width<=450px)) {
+  .reviewContainer {
+    width: 300px;
+  }
+}
