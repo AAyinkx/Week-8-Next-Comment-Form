@@ -71,6 +71,18 @@
 
   border-radius: 15px;
 }
+.commentContainer {
+  margin-bottom: 15px;
+}
+.commentUsername {
+  font-size: 25px;
+  color: green;
+  font-weight: 500;
+}
+.comment {
+  font-size: 30px;
+  color: black;
+}
 @media ((width<=925px)) {
   #review-container {
     width: 700px;

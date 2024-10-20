@@ -26,6 +26,9 @@ export default function Navbar() {
           <Link href="/morebooks">
             <i className="fa-solid fa-book-open"></i> More Books
           </Link>
+          <Link href="/sortbygenre">
+            <i class="fa-solid fa-magnifying-glass"></i> Sort by Genre
+          </Link>
         </div>
         <div className="dropdown">
           <i className="fa fa-bars" id="dropbtn" onClick={dropFunction}></i>
@@ -47,6 +50,9 @@ export default function Navbar() {
             </Link>
             <Link href="/morebooks">
               <i className="fa-solid fa-book-open"></i> More Books
+            </Link>
+            <Link href="/sortbygenre">
+              <i class="fa-solid fa-magnifying-glass"></i> Sort by Genre
             </Link>
           </div>
         </div>

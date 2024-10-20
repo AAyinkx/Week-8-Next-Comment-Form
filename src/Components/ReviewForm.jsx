@@ -10,7 +10,6 @@ export default async function ReviewForm() {
   // console.log(parseInt(JSON.stringify(reviewID.rows[0].id)) + 1);
   async function handleSubmit(formValues) {
     "use server";
-    let bgColour = { default: "#d5b48b" };
     const formData = {
       username: formValues.get("username"),
       title: formValues.get("title"),
@@ -23,14 +22,13 @@ export default async function ReviewForm() {
     };
     console.log(formData);
     await db.query(
-      `INSERT INTO book_reviews (username, title, author, genre, rating, review, src, date)
-          VALUES ($1, $2, $3, $4, $5, $6, $7,$8);
+      `INSERT INTO book_reviews (username, title, author, rating, review, src, date)
+          VALUES ($1, $2, $3, $4, $5, $6, $7);
           `,
       [
         formData.username,
         formData.title,
         formData.author,
-        formData.genre,
         formData.rating,
         formData.review,
         formData.src,

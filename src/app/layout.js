@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
         <Script
           src="https://kit.fontawesome.com/5d4d1c054f.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></Script>
         <Navbar />
         <Header styles={`text-6xl ${ribeye_marrow.className}`} />
