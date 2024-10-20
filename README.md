@@ -7,13 +7,13 @@
 ![alt text](<public/Week 7 Book Nook Full Stack WireFrame.png>)
 ![alt text](<public/Week 7 Book Nook Full Stack WireFrame (Stretch Goals).png>)
 
-- I actually managed to complete these goals that we stretch goals last week 🥳
+- I actually managed to complete these goals that were stretch goals last week 🥳
 
 ## Database Schema
 
 ![alt text](<public/Week 8 Book Nook 2.0 Full Stack Supabase Schema.png>)
 
-- I decided to chalenge myself with joins and references this week so i limited each table to dealing with one entity only
+- I decided to challenge myself with joins and references this week so i limited each table to dealing with one entity only
 
 ## Site Link
 
