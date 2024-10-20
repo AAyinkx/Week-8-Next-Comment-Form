@@ -1,0 +1,37 @@
+.readReviewsTitle {
+  font-size: 40px;
+  color: #6d071a;
+  margin-bottom: 20px;
+}
+.genre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #6d073d;
+  color: white;
+  padding: 5px 5px;
+  height: 3rem;
+  border-radius: 15px;
+}
+.genreContainer {
+  max-width: 1000px;
+  margin: 10px auto;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 400px) {
+  .genreContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .genreContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .genreContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -7,7 +7,7 @@ import { StarNumber } from "@/Utils/starCount";
 import Empty from "@/Components/Empty";
 export default async function GenreID({ params }) {
   const genre = await db.query(
-    `SELECT id FROM genres_of_books WHERE id=${params.genreid}`
+    `SELECT id, genre_name FROM genres_of_books WHERE id=${params.genreid}`
   );
   const wrangledGenre = genre.rows[0].id;
   console.log("This is the data you seek ", wrangledGenre);
@@ -21,6 +21,9 @@ JOIN genres_of_books ON genres_of_books.id = reviews_genres.genre_id WHERE revie
   const wrangledReviews = reviews.rows;
   return (
     <>
+      <h1 className={styles.readReviewsTitle}>
+        <i className="fa-solid fa-book"></i> {genre.rows[0].genre_name}
+      </h1>
       <div className={styles.reviewContainer}>
         {wrangledReviews.reverse().map((review) => (
           <div key={review.id} className={styles.review}>
@@ -31,8 +34,8 @@ JOIN genres_of_books ON genres_of_books.id = reviews_genres.genre_id WHERE revie
                 width={200}
                 height={350}
               />
-              <a href={`/readreviews/${review.id}`}>
-                Read more about {review.title}
+              <a className={styles.readMore} href={`/readreviews/${review.id}`}>
+                Read more about {review.title} reviewed by {review.username}
               </a>
             </div>
             <div className={styles.mainReview}>

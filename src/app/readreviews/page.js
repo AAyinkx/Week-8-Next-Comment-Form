@@ -25,8 +25,8 @@ export default async function ReadReviews() {
                 width={200}
                 height={350}
               />
-              <a href={`/readreviews/${review.id}`}>
-                Read more about {review.title}
+              <a className={styles.readMore} href={`/readreviews/${review.id}`}>
+                Read more about {review.title} reviewed by {review.username}
               </a>
             </div>
             <div className={styles.mainReview}>
