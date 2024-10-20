@@ -4,8 +4,9 @@ import Image from "next/image";
 import defaultImage from "@/../public/image-not-available.png";
 import styles from "../ReadReview.module.css";
 import { StarNumber } from "@/Utils/starCount";
+
 export default async function ReadReviews() {
-  const reviews = await db.query(`SELECT * FROM book_reviews`);
+  const reviews = await db.query(`SELECT * FROM book_reviews;`);
   console.log(reviews);
   const wrangledReviews = reviews.rows;
 
