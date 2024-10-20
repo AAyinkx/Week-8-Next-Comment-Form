@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 .reviewContainer {
   background-color: white;
-  width: 50vw;
+  width: 60vw;
   left: 50vw;
   transform: translateX(50%);
 
