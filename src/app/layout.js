@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         ></Script>
         <Navbar />
-        <Header styles={`text-6xl ${ribeye_marrow.className}`} />
+        <Header styles={`text-6xl mt-3 ${ribeye_marrow.className}`} />
         {children}
       </body>
     </html>
