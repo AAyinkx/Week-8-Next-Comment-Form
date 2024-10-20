@@ -5,6 +5,10 @@ import defaultImage from "@/../../public/image-not-available.png";
 import { dateISOtoLocal } from "@/Utils/dateFormat";
 import { StarNumber } from "@/Utils/starCount";
 import CommentForm from "@/Components/CommentForm";
+import ThumbButton from "@/Components/ThumbButton";
+import { revalidatePath } from "next/cache";
+//make sure redirect is from next/navigation
+import { redirect } from "next/navigation";
 export default async function IndividualReview({ params }) {
   const review = await db.query(
     `SELECT * FROM book_reviews WHERE id=${params.id}`
@@ -16,7 +20,17 @@ export default async function IndividualReview({ params }) {
     await db.query(`SELECT comments.id, comments.username, comments.comment FROM comments
 JOIN reviews_comments ON reviews_comments.comment_id = comments.id
 JOIN book_reviews ON book_reviews.id = reviews_comments.review_id WHERE reviews_comments.review_id = ${params.id}`);
+
   const wrangledComments = comments.rows;
+  let id = params.id;
+  async function handleClicks() {
+    "use server";
+    await db.query(
+      `UPDATE book_reviews SET likes = likes + 1 WHERE id = ${params.id};`
+    );
+    revalidatePath(`/readreviews/${params.id}`);
+    redirect(`/readreviews/${params.id}`);
+  }
 
   return (
     <>
@@ -44,6 +58,11 @@ JOIN book_reviews ON book_reviews.id = reviews_comments.review_id WHERE reviews_
                 {StarNumber(review.rating)}
               </div>
               <div className={styles.bookReview}>{review.review}</div>
+              <ThumbButton
+                id={id}
+                handleClicks={handleClicks}
+                initial={review.likes}
+              />
             </div>
           </div>
         ))}

@@ -1,18 +1,39 @@
-.thumb-container {
+#thumb-container {
   position: absolute;
-  right: 0px;
-  /* float: inline-end; */
+  top: 15px;
+  right: 20px;
 }
-.thumb-button {
+.thumButton {
   border: none;
   outline: none;
   background-color: transparent;
   color: black;
   cursor: pointer;
-  padding: 15px;
+  padding: 5px;
   border-radius: 30px;
-  font-size: 12px;
+  font-size: 30px;
 }
-.thumb-button:hover {
-  scale: 1.2 1.2;
+#thumb-button {
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+}
+.thumButton:hover {
+  scale: 1.2;
+}
+.green {
+  color: #4caf50;
+}
+#scale {
+  scale: 1;
+}
+@media ((width<=580px)) {
+  #thumb-button {
+    font-size: 20px;
+  }
+}
+@media ((width<=450px)) {
+  #thumb-button {
+    font-size: 15px;
+  }
 }
