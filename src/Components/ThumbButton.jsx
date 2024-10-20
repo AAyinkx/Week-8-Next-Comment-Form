@@ -1,6 +1,4 @@
 "use client";
-
-import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import "./ThumbButton.css";
 import { useState } from "react";

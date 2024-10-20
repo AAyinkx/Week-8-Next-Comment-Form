@@ -39,7 +39,8 @@ export default async function ReadReviews({ params }) {
                 height={350}
               />
               <a className={styles.readMore} href={`/readreviews/${review.id}`}>
-                Read more about {review.title} reviewed by {review.username}
+                Read more about {review.title} reviewed by &apos;
+                <em>{review.username}</em>&apos;
               </a>
             </div>
             <div className={styles.mainReview}>
