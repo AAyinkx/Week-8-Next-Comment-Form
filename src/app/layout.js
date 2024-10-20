@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${sue_ellen.className} ${"bg-cover bg-center text-center"}`}
+        className={`${
+          sue_ellen.className
+        } ${"bg-cover bg-center text-center mb-4"}`}
       >
         <Script
           src="https://kit.fontawesome.com/5d4d1c054f.js"

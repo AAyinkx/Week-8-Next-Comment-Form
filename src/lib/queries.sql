@@ -80,3 +80,10 @@ JOIN book_reviews ON book_reviews.id = reviews_comments.review_id WHERE reviews_
 SELECT book_reviews.id, book_reviews.username, book_reviews.title, book_reviews.author, book_reviews.rating, book_reviews.review,  book_reviews.date FROM book_reviews
 JOIN reviews_genres ON reviews_genres.review_id = book_reviews.id
 JOIN genres_of_books ON genres_of_books.id = reviews_genres.genre_id WHERE reviews_genres.genre_id = 18;
+
+--Update (for updating like count)
+UPDATE book_reviews SET likes = likes + 1 WHERE id = 1;
+--Delete
+-- I found that with my table set up you had to delete from the junction table first then delet from the comments
+DELETE FROM reviews_comments WHERE reviews_comments.review_id = 1 AND  reviews_comments.comment_id=1 ;
+DELETE FROM comments WHERE id = 1;
