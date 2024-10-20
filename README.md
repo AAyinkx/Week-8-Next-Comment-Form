@@ -37,7 +37,7 @@
 
 ## What bugs did I encounter? 🪲
 
-- I had a NIGHTMARE with the delete SQL query because i did'nt really make it easy for myself using seperate tables
+- I had a NIGHTMARE with the delete SQL query because i didn't really make it easy for myself using seperate tables
   - After many attempts i was able to delete successfully as long as a deleted the entry from the junction table first before deleting the entry from the comments table
 - **Unresoled issue:** I had this issue on friday with inamges and the _onError_ property. I had no issus with it last week however, this week, when trying to use if i had so many "404 Errors". I just used a default image for all the images as it wasn't really crucial to the functionality of the site
 - I think my most common issue this weekend was manipulating the data retrieved to use it for a certain function. 'consol.log(_typeof_ ) was definately overused
