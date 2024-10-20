@@ -1,9 +1,11 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 .reviewContainer {
+  position: relative;
   background-color: white;
   width: 60vw;
-  left: 50vw;
-  transform: translateX(50%);
+  display: inline-block;
+  /* left: 50vw;
+  transform: translateX(-50%); */
 
   padding-top: 20px;
   padding-bottom: 20px;
