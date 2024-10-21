@@ -78,7 +78,7 @@
   margin-bottom: 15px;
   background-color: rgba(240, 248, 255, 0.641);
   height: 150px;
-  width: 40vw;
+  width: 50vw;
   overflow: scroll;
   overflow-x: hidden;
   border-radius: 10px;
@@ -99,11 +99,15 @@
   .bookReview {
     font-size: 23px;
   }
+  .commentUsername {
+    font-size: 18px;
+  }
+  .comment {
+    font-size: 24px;
+  }
 }
 @media ((width<=580px)) {
   .bookReview {
     font-size: 20px;
   }
-}
-@media ((width<=450px)) {
 }

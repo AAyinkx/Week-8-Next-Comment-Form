@@ -3,21 +3,22 @@ import "./CommentForm.css";
 import { revalidatePath } from "next/cache";
 //make sure redirect is from next/navigation
 import { redirect } from "next/navigation";
+
 export default async function CommentForm(props) {
   //!Console tests
   // console.log("This is the " + parseInt(genreID.rows[0].id));
   // console.log(typeof genreID.rows[0].id);
   // console.log(parseInt(JSON.stringify(reviewID.rows[0].id)) + 1);
+
   async function handleSubmit(formValues) {
     "use server";
 
     const formData = {
-      username: "",
-      comment: "",
+      username: formValues.get("username"),
+      comment: formValues.get("comment"),
     };
-    formData.username = formValues.get("username");
-    formData.comment = formValues.get("comment");
-    console.log(formData);
+
+    // console.log(formData);
     await db.query(
       `INSERT INTO comments (username, comment)
           VALUES ($1, $2);
@@ -36,8 +37,10 @@ export default async function CommentForm(props) {
       `INSERT INTO reviews_comments (review_id, comment_id) VALUES ($1, $2)`,
       [reviewInsert, commentInsert]
     );
+
     //Refreshing the data on the reviews page
-    revalidatePath("/readreviews");
+    revalidatePath(`/readreviews/${props.id}`);
+    // formValues.reset();
   }
   return (
     <div id="form-container">

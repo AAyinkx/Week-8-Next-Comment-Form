@@ -33,12 +33,13 @@
 - I was able to complete all of the CRUD endpoints somewhere on my site and found the use of dynamic routes a lot easier in next.js
 - I also got to revisit and put into practice some SQL topics that I wasn't feeling too confident on before like refrences, joins and updates
 - Another thing that i was able to complete as opposed to last week was the 'Sort by Genre' page. I don't have hardly enough data for all the genres, but i wanted to keep the options open 😅. To check it actually works, i think 'Self Help' and 'Contemporary' have been assigned some reviews.
-- I always have fun at styling but this week i wanted to sepnd more time on other elements so i re-used most of my styling from last week and just changed them slightly to ".module.css" that's why there is very little taileind. I think i used it once or twice to change some font sizes.
+- I always have fun at styling but this week i wanted to spend more time on other elements so i re-used most of my styling from last week and just changed them slightly to ".module.css" that's why there is very little tailwind. I think i used it once or twice to change some font sizes.
 
 ## What bugs did I encounter? 🪲
 
 - I had a NIGHTMARE with the delete SQL query because i didn't really make it easy for myself using seperate tables
   - After many attempts i was able to delete successfully as long as a deleted the entry from the junction table first before deleting the entry from the comments table
 - **Unresoled issue:** I had this issue on friday with inamges and the _onError_ property. I had no issus with it last week however, this week, when trying to use if i had so many "404 Errors". I just used a default image for all the images as it wasn't really crucial to the functionality of the site
-- I think my most common issue this weekend was manipulating the data retrieved to use it for a certain function. 'consol.log(_typeof_ ) was definately overused
+- I think my most common issue this weekend was manipulating the data retrieved to use it for a certain function. 'consol.loge(_typeof_ ) was definately overused
 - With my update likes buttons and delete buttons I got really confused with what was meant to be a client element and a server element but I got some help to figure it our eventually
+- One thing i would like to know id how to reset my comments form. I don't know if this is just a client action though because my comments form uses the server
