@@ -43,3 +43,4 @@
 - I think my most common issue this weekend was manipulating the data retrieved to use it for a certain function. 'consol.loge(_typeof_ ) was definately overused
 - With my update likes buttons and delete buttons I got really confused with what was meant to be a client element and a server element but I got some help to figure it our eventually
 - One thing i would like to know id how to reset my comments form. I don't know if this is just a client action though because my comments form uses the server
+- Also, is there a way to generate meta data using the data from our database?
