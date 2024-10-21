@@ -13,7 +13,7 @@ export const metadata = {
   description: "Read Reviews Posted by other people",
 };
 export default async function ReadReviews({ params }) {
-  const reviews = await db.query(`SELECT * FROM book_reviews;`);
+  const reviews = await db.query(`SELECT * FROM book_reviews ORDER BY id;`);
 
   console.log(reviews);
   const wrangledReviews = reviews.rows;
