@@ -5,6 +5,7 @@ import defaultImage from "@/../public/image-not-available.png";
 import styles from "../../ReadReview.module.css";
 import { StarNumber } from "@/Utils/starCount";
 import Empty from "@/Components/Empty";
+import Link from "next/link";
 export const metadata = {
   title: `Genre Exploration 🌍`,
   description: `Explore the different genres`,
@@ -61,6 +62,9 @@ JOIN genres_of_books ON genres_of_books.id = reviews_genres.genre_id WHERE revie
           </div>
         ))}
         <Empty rows={reviews.rowCount} />
+        <Link className="links" href="/sortbygenre">
+          <i className="fa-solid fa-magnifying-glass"></i> Back to Genres
+        </Link>
       </div>
     </>
   );

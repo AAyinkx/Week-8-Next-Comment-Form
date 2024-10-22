@@ -75,6 +75,12 @@
 .readMore:hover {
   color: #ff4081;
 }
+.links {
+  color: #6d071a;
+}
+.links:hover {
+  color: navy;
+}
 @media ((width<=925px)) {
   .reviewContainer {
     width: 700px;
