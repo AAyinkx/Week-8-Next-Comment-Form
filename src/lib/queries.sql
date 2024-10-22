@@ -65,6 +65,9 @@ INSERT INTO genres_of_books (genre_name) VALUES
 ('Spirituality & Religion'),
 ('Politics & Current Affairs');
 
+-- Selecting all books ordereed by id
+SELECT * FROM book_reviews ORDER BY id;
+
 -- Get the id of the latest book
 SELECT id FROM book_reviews ORDER BY id DESC
 LIMIT 1;
@@ -72,11 +75,12 @@ LIMIT 1;
 -- Selecting genre id by genre_name
 SELECT id FROM genres_of_books WHERE genre_name='Mystery';
 
---Select with Joins
+--Select with Joins - selecting comments id, username and comment for a specific review id
 SELECT comments.id, comments.username, comments.comment FROM comments
 JOIN reviews_comments ON reviews_comments.comment_id = comments.id
 JOIN book_reviews ON book_reviews.id = reviews_comments.review_id WHERE reviews_comments.review_id = 1;
 
+--Select with Joins - selecting book reviews for a specific genre 
 SELECT book_reviews.id, book_reviews.username, book_reviews.title, book_reviews.author, book_reviews.rating, book_reviews.review,  book_reviews.date FROM book_reviews
 JOIN reviews_genres ON reviews_genres.review_id = book_reviews.id
 JOIN genres_of_books ON genres_of_books.id = reviews_genres.genre_id WHERE reviews_genres.genre_id = 18;

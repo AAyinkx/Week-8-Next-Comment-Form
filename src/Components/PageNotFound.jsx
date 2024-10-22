@@ -10,9 +10,6 @@ export default function PageNotFound() {
       <Link className="links" href="/">
         <i className="fa-solid fa-house"></i> Back Home
       </Link>
-      <Link className="links" href="/sortbygenre">
-        <i className="fa-solid fa-magnifying-glass"></i> Back to Genres
-      </Link>
       <br />
       <Image
         alt="empty bookshelf"
