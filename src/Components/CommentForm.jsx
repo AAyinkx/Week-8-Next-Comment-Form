@@ -39,8 +39,8 @@ export default async function CommentForm(props) {
     );
 
     //Refreshing the data on the reviews page
+
     revalidatePath(`/readreviews/${props.id}`);
-    // formValues.reset();
   }
   return (
     <div id="form-container">
